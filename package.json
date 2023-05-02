@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "Edit Edit Mer edits",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianH-ctrl/testing-with-jest.git"
+  },
+  "author": "Sebastian H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianH-ctrl/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/SebastianH-ctrl/testing-with-jest#readme"
+}
