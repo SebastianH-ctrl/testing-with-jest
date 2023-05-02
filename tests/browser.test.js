@@ -4,6 +4,8 @@ require('geckodriver');
 const fileUnderTest = 'file://' + __dirname.replace(/ /g, '%20') + '/../dist/index.html';
 const defaultTimeout = 10000;
 let driver;
+
+// Bytte ut mot jest egna timeout
 jest.setTimeout(1000 * 60 * 5); // 5 minutes
 
 
@@ -32,4 +34,10 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.sendKeys("Bananer");
 		await alert.accept();
 	});
+
+    /* NYTT TEST */
+    it('should add element to stack and update it', async () => {
+        let stack = await driver.findElement(By.id('top_of_stack')).getText();
+        expect(stack).toEqual("Bananer");
+    });
 });
